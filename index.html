@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henriette Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Henriette</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <h1>Welcome to my Portfolio</h1>
+        <p>Hi, I am Henriette — a Software Developer</p>
+        <button onclick="scrollToSection('about')">Read More</button>
+    </header>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <div class="card">Frontend Development</div>
+            <div class="card">Backend Development</div>
+            <div class="card">Database Management</div>
+            <div class="card">UI/UX Design</div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate software developer skilled in both Frontend and Backend,
+            dedicated to building high-quality, user-friendly digital experiences.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="card">Project 1 — Portfolio Website</div>
+            <div class="card">Project 2 — E-commerce System</div>
+            <div class="card">Project 3 — Blogging Platform</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+
+        <div class="contact-form">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Email">
+            <textarea id="message" rows="4" placeholder="Message"></textarea>
+
+            <button onclick="sendMessage()">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        Copyright © 2025 — All rights reserved
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
