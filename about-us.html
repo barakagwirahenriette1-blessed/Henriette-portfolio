@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About Us — Henriette</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">Henriette</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about-us.html" class="active">About Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container about-top">
+      <h2>About Us</h2>
+      <p>I am a software developer building frontends and backends. Below is the Figma prototype for this portfolio and a resume download.</p>
+
+      <div class="about-grid">
+        <div>
+          <h3>Our story</h3>
+          <p>We design clean web experiences based on Figma prototypes — fast, accessible, and responsive.</p>
+
+          <p>
+            Prototype (open in Figma): 
+            <a href="https://www.figma.com/proto/ei8tZC69Tn0QjtfypSQ4Xd/barakagwirahenriette?node-id=1-6&starting-point-node-id=1%3A2" target="_blank" rel="noopener">Open Figma Prototype</a>
+          </p>
+
+          <div class="download-row">
+            <!-- direct file link (place resume.pdf in site root) -->
+            <a class="btn" id="direct-resume" href="resume.pdf" download>Download resume.pdf</a>
+
+            <!-- JS fallback generator -->
+            <button class="btn ghost" id="generate-resume">Generate & Download Resume</button>
+          </div>
+        </div>
+
+        <div>
+          <h3>Prototype preview</h3>
+          <!-- Embedded prototype link (may require public access in Figma) -->
+          <div class="figma-embed">
+            <iframe 
+              title="Figma prototype"
+              src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/ei8tZC69Tn0QjtfypSQ4Xd/barakagwirahenriette?node-id=1-6&starting-point-node-id=1%3A2"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="muted">If the embed doesn't load, click "Open Figma Prototype" above to open it on figma.com.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© 2025 Henriette. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
